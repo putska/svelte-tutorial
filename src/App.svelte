@@ -85,8 +85,8 @@
 
 <Navbar {showForm}/>
 <main class="content">
-	<Github />
-	<!-- {#if isFormOpen}
+	
+	{#if isFormOpen}
 	<Modal>
 		<ExpenseForm bind:name={setName} bind:amount={setAmount} {addExpense} {editExpense} {isEditing} {hideForm}/>
 	</Modal>
@@ -96,6 +96,6 @@
 	<ExpenseList expenses={expenses}/>
 	<button type="button" class="btn btn-primary btn-block" on:click={clearExpenses}>
 		clear expenses
-	</button> -->
+	</button>
 </main>
 
